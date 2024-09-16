@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Broadcaster</title>
+  <meta charset="UTF-8" />
+  <link href="/styles.css" rel="stylesheet" />
+
+</head>
+<style>
+  div#content {
+    height: 275px;
+  }
+
+  div#content video {
+    width: 380px;
+    height: 280px;
+  }
+</style>
+
+<body>
+  <div id="content-broadcast">
+
+    <video id="video" playsinline autoplay muted></video>
+    <div style="    position: absolute;
+    margin-left: 6px;
+    margin-top: 210px;
+    display: inline-flex;  
+">
+      <button style="width: 130px;" class="audio-on" id="toggle-audio">Mute</button>
+      <button style="width: 130px;margin-left: 13px;" class="audio-on" id="toggle-video">Ocultar cámara</button>
+    </div>
+    <section style="display: none;" class="select">
+      <label for="audioSource">Audio source: </label>
+      <select id="audioSource"></select>
+    </section>
+
+    <section style="display: none;" class="select">
+      <label for="videoSource">Video source: </label>
+      <select id="videoSource"></select>
+    </section>
+
+
+
+
+
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/broadcast.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Viewer</title>
+  <meta charset="UTF-8" />
+  <link href="/styles.css" rel="stylesheet" />
+  
+</head>
+
+<body>
+  <div id="content-watch">
+  <video id="video"  playsinline autoplay muted></video>
+  <button id="toggle-audio" class="audio-off" style="position: absolute;
+ top: 215px;
+    left: 210px;">Unmute</button>
+  </div>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/watch.js"></script>
+</html>
